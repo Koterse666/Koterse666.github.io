@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun - Jasmine's Blog</title>
+    <style>
+        /* Your existing CSS styles */
+        .content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Jasmine's Blog</h1>
+</header>
+
+<div class="banner" style="background: url('fun-banner-image-url.jpg') no-repeat center center/cover;">
+    <h1>Fun Adventures</h1>
+</div>
+
+<div class="container">
+    <section class="blog-posts">
+        <article class="post" onclick="toggleContent(this)">
+            <h2>Five Lakes Walk around Matterhorn</h2>
+            <div class="content">
+                <p>Zermatt</p>
+            </div>
+        </article>
+        <!-- Repeat for other articles, wrapping content paragraphs in a div with class="content" -->
+    </section>
+    
+    <aside class="subscribe">
+        <h2>Subscribe to Get Updates</h2>
+        <form>
+            <input type="email" name="email" placeholder="Your Email Address">
+            <input type="submit" value="Subscribe">
+        </form>
+    </aside>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2024 Jasmine's Blog</p>
+</footer>
+
+<script>
+    function toggleContent(element) {
+        var content = element.querySelector(".content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
