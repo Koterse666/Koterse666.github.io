@@ -3,57 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Your Blog Name</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 1100px;
             margin: auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .header {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
+        }
+        .banner {
+            background: url('your-banner-image-url.jpg') no-repeat center center/cover;
+            min-height: 250px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+        }
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .post {
+            background: #f4f4f4;
+            padding: 20px;
             margin-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
+        .post h2 {
+            margin-top: 0;
         }
-        .introduction {
-            margin-bottom: 20px;
+        .subscribe {
+            text-align: center;
+            padding: 20px;
+            background: #e2e2e2;
         }
-        .blog-link {
-            display: block;
-            width: fit-content;
-            margin: auto;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .subscribe input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
         }
-        .blog-link:hover {
-            background-color: #0056b3;
+        .subscribe input[type="submit"] {
+            padding: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Welcome to My Homepage</h1>
-        </div>
-        <div class="introduction">
-            <p>Hello, I'm [Your Name]! I'm a [Your Profession] with a passion for [Your Interests]. This is my personal space where I share insights, stories, and more about my professional journey and personal interests. I hope you find it informative and engaging!</p>
-        </div>
-        <a href="[Your Blog URL]" class="blog-link">Visit My Blog</a>
-    </div>
+
+<header>
+    <h1>Jasmine's Blog</h1>
+</header>
+
+<div class="banner">
+    <h1>i am just testing</h1>
+</div>
+
+<div class="container">
+    <section class="blog-posts">
+        <article class="post">
+            <h2>Fun</h2>
+            <p>hiking and others</p>
+        </article>
+        <article class="post">
+            <h2>Academic & Career</h2>
+            <p>reflection about the more serious part of my life (?)...</p>
+        </article>
+        <article class="post">
+            <h2>Books & Movies</h2>
+            <p>Some reflections about books I have been reading and </p>
+        </article>
+        <article class="post">
+            <h2>My Stock Portfolio</h2>
+            <p>This is my stock diary !!!...Some reflection to keep myself prudent</p>
+        </article>
+        <article class="post">
+            <h2>Random</h2>
+            <p>众所周知这是每个p人都要有的一个subsection</p>
+        </article>
+        <article class="post">
+            <h2>Resolutions</h2>
+            <p> Some short term and long term goals ~ </p>
+        </article>
+        <!-- Add more blog posts here -->
+    </section>
+
+    <aside class="subscribe">
+        <h2>Subscribe to Get Updates</h2>
+        <h2>Obviously I have not implemented this part because I have not yet learn the backend stuff to facilitate this</h2>
+        <form>
+            <input type="email" name="email" placeholder="Your Email Address">
+            <input type="submit" value="Subscribe">
+        </form>
+    </aside>
+</div>
+
+<footer>
+    <p>Copyright &copy; 2024 jmcai@link.cuhk.edu.hk</p>
+</footer>
+
 </body>
 </html>
